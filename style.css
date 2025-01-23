@@ -1,6 +1,6 @@
 * {
   border: border-box;
-  font-family: cursive;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .background-image {
@@ -9,7 +9,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(wallhaven-x1kd1d.jpg);
+  background-image: url(bgi2.webp);
   background-size: cover;
   opacity: 0.3;
   z-index: -1;
@@ -27,7 +27,6 @@ img {
 #container-main {
   display: flex;
   height: 37.5rem; 
-  /* background-color: white; */
   margin-top: 0.625rem;
   
 }
@@ -59,40 +58,90 @@ img {
   transform: translate(60px );
 }
 
-#insta {
-  font-size: 2.5rem; 
-  background-color: #f0ae13;
-}
-
-#fb {
-  font-size: 2.5rem; 
-  background-color: #f0ae13;
-}
-
-
-
 h1 {
   text-align: center;
 }
 
-.footer-content {
-  height: 5rem;
-  background-color: #f0ae13;
-  font-size: 1.875rem;
+footer {
+  background-color: #2c3e50; 
+  color: #ecf0f1;
+  padding: 2rem 0; 
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  justify-content: space-around; 
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1; 
+  padding: 1rem; 
+}
+
+.footer-section h2 {
+  margin-bottom: 1rem; 
+  font-size: 1.5rem; 
+}
+
+.footer-section p {
+  margin-bottom: 1rem; 
+}
+
+.footer-section ul {
+  list-style: none; 
+  padding: 0; 
+}
+
+.footer-section ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+  color: #ecf0f1; 
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline; 
+}
+
+.social-icons {
+  margin-top: 1rem; 
+}
+
+.social-icons i {
+  font-size: 1.5rem; 
+  margin: 0 0.5rem; 
+  color: #ecf0f1; 
+  transition: color 0.3s; 
+}
+
+.social-icons i:hover {
+  color: #3498db; 
+}
+
+.social-icons #insta:hover {
+  color: #d62976; 
+}
+
+.footer-bottom {
+  text-align: center; 
+  padding: 1rem 0; 
+  background-color: #34495e; 
+}
+
+.footer-bottom p {
+  margin: 0; 
 }
 
 .icons {
   margin-left: 3.4375rem;
   letter-spacing: 1.25rem;
   font-size: 2.5rem;
-  color: white;
+  color: #EEE5D9;
 }
 
 .icons i {
@@ -104,35 +153,97 @@ h1 {
   transform: scale(1.2);
 }
 
-
 .icons {
-  background-color: #f0ae13;
-  margin-left: 3.4375rem; /* 55px / 16px = 3.4375rem */
-  letter-spacing: 1.25rem; /* 20px / 16px = 1.25rem */
+  background-color: #210124;
+  margin-left: 3.4375rem; 
+  letter-spacing: 1.25rem; 
 }
 
-.navbar {
-  height: 3.125rem; /* 50px / 16px = 3.125rem */
-  background-color: red;
-  color: white;
+hr {
+  border: 0; 
+  height: 1px; 
+  background-color: #210124; 
+  margin: 0.1rem 0; 
+}
+
+#cgc-logo img:nth-child(2), #cgc-logo img:nth-child(3) {
+  width: 13rem;
+  height: auto;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#content {
+  position: relative;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
+  color: #210124;
+  font-weight: 500;
   
 }
 
+.navbar {
+  height: 3.125rem; 
+  background-color: #E5FCF5;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+.navbar img {
+  height: 2.5rem; 
+  margin-right: 1rem;
+}
+
+.paras-container {
+  display: flex;
+  align-items: center;
+}
+
 .paras {
-  background-color: red;
-  font-size: 1.5625rem; /* 25px / 16px = 1.5625rem */
+  background-color:white ;
+  font-size: 1.25rem; 
   margin: 0;
-  padding: 0.5rem; /* 8px / 16px = 0.5rem */
+  padding: 0.5rem; 
+  cursor: pointer;
+  margin-right: 1rem;
+  color: #210124;
+  font-weight: 600;
+  border-radius: 10px;
 }
 
 .paras:hover {
-  box-shadow: 7px 7px 5px black;
+  box-shadow: 12px 12px 5px #210124;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
+  background-color: #A30D33;
+  color: white;
+  
+}
+
+.navbar img {
+  height: 3.75rem;
+  margin-right: 1rem;
+}
+
+.navbar {
+  height: 4.375rem; 
+  background-color: white;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+h1{
+  font-size: 50px;
 }
 
 #one{
@@ -145,14 +256,12 @@ h1 {
   width: 300px;
 }
 
-
 #buttons1, #buttons2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
 }
-
 #buttons1 button, #buttons2 button {
   display: flex;
   flex-direction: column;
@@ -160,13 +269,15 @@ h1 {
   padding: 1rem;
   border: none;
   border-radius: 0.5rem;
-  background-color: anti;
-  /* color: white; */
-  font-size: 1.5625rem;
+  background-color: #EEE5D9;
+  font-size: 1.3rem;
   cursor: pointer;
-  margin: 1rem;
+  margin: 2rem;
   width: 200px;
   height: 250px;
+  color: #69655F;
+  font-weight: 500;
+  gap: 1rem; 
 }
 
 #buttons1 button img, #buttons2 button img {
@@ -177,251 +288,8 @@ h1 {
 }
 
 #buttons1 button:hover, #buttons2 button:hover {
-  background-color: red;
-  /* color: white; */
+  background-color: #69655F;
   transform: scale(1.1);
   transition-duration: 0.5s;
-}
-
-
-/* Media Queries */
-
-/* iPhone SE (320px x 568px) */
-@media only screen and (max-width: 20rem) {
-  #container-main {
-    flex-direction: column;
-  }
-  #left-img, #right-img {
-    width: 100%;
-    height: 12.5rem; 
-  }
-  #content {
-    width: 100%;
-    font-size: 1.125rem; 
-  }
-}
-
-/* iPhone XR (414px x 896px) */
-@media only screen and (max-width: 25.875rem) {
-  #container-main {
-    flex-direction: column;
-  }
-  #left-img, #right-img {
-    width: 100%;
-    height: 15.625rem; 
-  }
-  #content {
-    width: 100%;
-    font-size: 1.25rem; 
-  }
-}
-
-/* iPhone 12 Pro (390px x 844px) */
-@media only screen and (max-width: 24.375rem) {
-  #container-main {
-    flex-direction: column;
-  }
-  #left-img, #right-img {
-    width: 100%;
-    height: 13.75rem; 
-  }
-  #content {
-    width: 100%;
-    font-size: 1.25rem; 
-  }
-}
-
-/* iPhone 14 Pro Max (428px x 926px) */
-@media only screen and (max-width: 26.75rem) {
-  #container-main {
-    flex-direction: column;
-  }
-  #left-img, #right-img {
-    width: 100%;
-    height: 17.5rem; 
-  }
-  #content {
-    width: 100%;
-    font-size: 1.375rem; 
-  }
-}
-
-/* Pixel 7 (393px x 851px) */
-@media only screen and (max-width: 24.5625rem) {
-  #container-main {
-    flex-direction: column;
-  }
-  #left-img, #right-img {
-    width: 100%;
-    height: 14.375rem; 
-  }
-  #content {
-    width: 100%;
-    font-size: 1.25rem; 
-  }
-}
-
-/* Samsung Galaxy S8+ (360px x 740px) */
-@media only screen and (max-width: 22.5rem) {
-  #container-main {
-    flex-direction: column;
-  }
-  #left-img, #right-img {
-    width: 100%;
-    height: 12.5rem; 
-  }
-  #content {
-    width: 100%;
-    font-size: 1.125rem; 
-  }
-}
-
-/* Samsung Galaxy S20 Ultra (412px x 915px) */
-@media only screen and (max-width: 25.75rem) {
-  #container-main {
-    flex-direction: column;
-  }
-  #left-img, #right-img {
-    width: 100%;
-    height: 16.25rem; 
-  }
-  #content {
-    width: 100%;
-    font-size: 1.375rem; 
-  }
-}
-
-/* iPad Mini (768px x 1024px) */
-@media only screen and (max-width: 48rem) {
-  #container-main {
-    flex-direction: row;
-  }
-  #left-img, #right-img {
-    width: 18.75rem; 
-    height: 25rem; 
-  }
-  #content {
-    width: 31.25rem; 
-    font-size: 1.5rem; 
-  }
-}
-
-/* iPad Air (820px x 1180px) */
-@media only screen and (max-width: 51.25rem) {
-  #container-main {
-    flex-direction: row;
-  }
-  #left-img, #right-img {
-    width: 21.875rem; 
-    height: 31.25rem; 
-  }
-  #content {
-    width: 37.5rem; 
-    font-size: 1.625rem;
-  }
-}
-
-/* iPad Pro (1024px x 1366px) */
-@media only screen and (max-width: 64rem) {
-  #container-main {
-    flex-direction: row;
-  }
-  #left-img, #right-img {
-    width: 25rem; 
-    height: 37.5rem; 
-  }
-  #content {
-    width: 43.75rem; 
-    font-size: 1.75rem; 
-  }
-}
-
-/* Surface Pro 7 (912px x 1366px) */
-@media only screen and (max-width: 57rem) {
-  #container-main {
-    flex-direction: row;
-  }
-  #left-img, #right-img {
-    width: 21.875rem; 
-    height: 34.375rem; 
-  }
-  #content {
-    width: 37.5rem; 
-    font-size: 1.625rem; 
-  }
-}
-
-/* Surface Duo (540px x 1800px) */
-@media only screen and (max-width: 33.75rem) {
-  #container-main {
-    flex-direction: column;
-  }
-  #left-img, #right-img {
-    width: 100%;
-    height: 18.75rem; 
-  }
-  #content {
-    width: 100%;
-    font-size: 1.375rem; 
-  }
-}
-
-/* Galaxy Z Fold 5 (816px x 1812px) */
-@media only screen and (max-width: 51rem) {
-  #container-main {
-    flex-direction: column;
-  }
-  #left-img, #right-img {
-    width: 100%;
-    height: 21.875rem; 
-  }
-  #content {
-    width: 100%;
-    font-size: 1.5rem; 
-  }
-}
-
-/* Asus Zenbook Fold (800px x 1280px) */
-@media only screen and (max-width: 50rem) {
-  #container-main {
-    flex-direction: column;
-  }
-  #left-img, #right-img {
-    width: 100%;
-    height: 20rem; 
-  }
-  #content {
-    width: 100%;
-    font-size: 1.375rem; 
-  }
-}
-
-/* Samsung Galaxy A51/71 (412px x 869px) */
-@media only screen and (max-width: 25.75rem) {
-  #container-main {
-    flex-direction: column;
-  }
-  #left-img, #right-img {
-    width: 100%;
-    height: 16.25rem; 
-  }
-  #content {
-    width: 100%;
-    font-size: 1.375rem; 
-  }
-}
-
-/* Nest Hub (1024px x 600px) */
-@media only screen and (max-width: 64rem) and (max-height: 37.5rem) {
-  #container-main {
-    flex-direction: column;
-  }
-  #left-img, #right-img {
-    width: 100%;
-    height: 18.75rem; 
-  }
-  #content {
-    width: 100%;
-    font-size: 1.5rem; 
-  }
+  color: #EEE5D9;
 }
